@@ -16,7 +16,7 @@ from . import *
 
 # --------------------------------------------------------------------#
 telegraph = Telegraph()
-r = telegraph.create_account(short_name="Ultroid")
+r = telegraph.create_account(short_name="TG-Troid")
 auth_url = r["auth_url"]
 # --------------------------------------------------------------------#
 
@@ -90,10 +90,10 @@ async def changes(okk):
         file.close()
         await okk.edit(
             get_string("upd_5"),
-            file="ultroid_updates.txt",
+            file="tgtroid_updates.txt",
             buttons=Button.inline("Update Now", data="updatenow"),
         )
-        remove(f"ultroid_updates.txt")
+        remove(f"tgtroid_updates.txt")
         return
     else:
         await okk.edit(
@@ -143,7 +143,7 @@ async def _(e):
     token_file_data = f.read()
     udB.set("GDRIVE_TOKEN", token_file_data)
     await e.reply(
-        "`Success!\nYou are all set to use Google Drive with Ultroid Userbot.`",
+        "`Success!\nYou are all set to use Google Drive with TGtroid Userbot.`",
         buttons=Button.inline("Main Menu", data="setter"),
     )
 
@@ -232,7 +232,7 @@ async def _(e):
 @owner
 async def otvaar(event):
     await event.edit(
-        "Other Variables to set for @TheUltroid:",
+        "Other Variables to set for TG-Troid:",
         buttons=[
             [
                 Button.inline("Tᴀɢ Lᴏɢɢᴇʀ", data="taglog"),
@@ -294,7 +294,7 @@ async def pluginch(event):
     name = "Plugin Channel"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            "Send id or username of a channel from where u want to install all plugins\n\nOur Channel~ @ultroidplugins\n\nUse /cancel to cancel.",
+            "Send id or username of a channel from where u want to install all plugins\n\nOur Channel~ @tgtroidplugins\n\nUse /cancel to cancel.",
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
@@ -889,7 +889,7 @@ async def pmofff(event):
 @owner
 async def chbot(event):
     await event.edit(
-        f"From This Feature U can chat with ppls Via ur Assistant Bot.\n[More info](https://t.me/UltroidUpdates/2)",
+        f"From This Feature U can chat with ppls Via ur Assistant Bot.\n[More info](lasiya.ml)",
         buttons=[
             [Button.inline("Cʜᴀᴛ Bᴏᴛ  Oɴ", data="onchbot")],
             [Button.inline("Cʜᴀᴛ Bᴏᴛ  Oғғ", data="ofchbot")],
@@ -956,7 +956,7 @@ async def chon(event):
 @owner
 async def vcb(event):
     await event.edit(
-        f"From This Feature U can play songs in group voice chat\n\n[moreinfo](https://t.me/UltroidUpdates/4)",
+        f"From This Feature U can play songs in group voice chat\n\n[moreinfo](https://lasiya,ml)",
         buttons=[
             [Button.inline("VC Sᴇssɪᴏɴ", data="vcs")],
             [Button.inline("WEBSOCKET", data="vcw")],
