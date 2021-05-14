@@ -1,9 +1,4 @@
-# Ultroid - UserBot
-# Copyright (C) 2020 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+
 
 
 from telethon.errors import ChatSendInlineForbiddenError
@@ -13,9 +8,9 @@ from . import *
 
 REPOMSG = (
     "• **ULTROID USERBOT** •\n\n",
-    "• Repo - [Click Here](https://github.com/TeamUltroid/Ultroid)\n",
-    "• Addons - [Click Here](https://github.com/TeamUltroid/UltroidAddons)\n",
-    "• Support - @UltroidSupport",
+    "• Repo - [Click Here](https://github.com/SLdevilX/TG-Troid)\n",
+    "• Site - [Click Here](lasiya.ml)\n",
+    "• Support - @danuma01",
 )
 
 
