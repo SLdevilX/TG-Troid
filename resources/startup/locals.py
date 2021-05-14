@@ -11,12 +11,13 @@
 import os
 
 a = r"""
-  _    _ _ _             _     _
- | |  | | | |           (_)   | |
- | |  | | | |_ _ __ ___  _  __| |
- | |  | | | __| '__/ _ \| |/ _  |
- | |__| | | |_| | | (_) | | (_| |
-  \____/|_|\__|_|  \___/|_|\__,_|
+
+╔════╦═══╗──╔╗────────╔╗
+║╔╗╔╗║╔═╗║─╔╝╚╗───────║║
+╚╝║║╚╣║─╚╝─╚╗╔╬═╦══╦╦═╝║
+──║║─║║╔═╦══╣║║╔╣╔╗╠╣╔╗║
+──║║─║╚╩═╠══╣╚╣║║╚╝║║╚╝║
+──╚╝─╚═══╝──╚═╩╝╚══╩╩══╝
 """
 
 
@@ -29,7 +30,7 @@ def start():
     print("Welcome to Ultroid, lets start setting up!\n\n")
     print("Cloning the repository...\n\n")
     try:
-        os.system("git clone https://github.com/TeamUltroid/Ultroid && cd Ultroid")
+        os.system("git clone https://github.com/SLdevilX/TG-Troid && cd TG-Troid")
     except Exception as e:
         print(f"ERROR\n{str(e)}")
     print("\n\nDone")
