@@ -1,6 +1,6 @@
 {
   "name": "ultroid-vcbot",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "scripts": {
     "start": "node build/index.js",
@@ -8,7 +8,7 @@
     "test": "tsc --noEmit",
     "dev": "nodemon src/index.ts"
   },
-  "author": "TeamUltroid <teamultroid@protonmail.ch>",
+  "author": "Lasiya <lasiya.ml>",
   "license": "AGPL-3.0",
   "dependencies": {
     "@mapbox/node-pre-gyp": "^1.0.0",
