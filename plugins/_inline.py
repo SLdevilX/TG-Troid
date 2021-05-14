@@ -22,7 +22,7 @@ from . import *
 
 # ================================================#
 notmine = f"This bot is for {OWNER_NAME}"
-ULTROID_PIC = "https://telegra.ph/file/031957757a4f6a5191040.jpg"
+ULTROID_PIC = "https://telegra.ph/file/eae11a10fe0d71b59e8ef.jpg"
 helps = get_string("inline_1")
 
 add_ons = udB.get("ADDONS")
@@ -52,23 +52,23 @@ async def e(o):
         )
         res = [
             await b.article(
-                title="Ultroid Userbot",
-                url="https://t.me/TeamUltroid",
+                title="TG-Troid Userbot",
+                url="https://t.me/danumabots",
                 description="Userbot | Telethon ",
                 text=ALIVEMSG,
                 thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
                 buttons=[
-                    [Button.url(text="Support Group", url="t.me/UltroidSupport")],
+                    [Button.url(text="Support Group", url="t.me/danuma01")],
                     [
                         Button.url(
                             text="Repo",
-                            url="https://github.com/Teamultroid/Ultroid",
+                            url="https://github.com/SLdevilX/TG-Troid",
                         ),
                     ],
                 ],
             ),
         ]
-        await o.answer(res, switch_pm=f"👥 ULTROID PORTAL", switch_pm_param="start")
+        await o.answer(res, switch_pm=f"👥 TG-Troid PORTAL", switch_pm_param="start")
 
 
 if asst.me is not None:
@@ -79,7 +79,7 @@ if asst.me is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id in sed and query.startswith("ultd"):
+        if event.query.user_id in sed and query.startswith("tgtd"):
             z = []
             for x in LIST.values():
                 for y in x:
@@ -186,12 +186,12 @@ if asst.me is not None:
             [
                 Button.switch_inline(
                     "Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ",
-                    query="go TeamUltroid",
+                    query="go Danuma group",
                     same_peer=True,
                 ),
                 Button.switch_inline(
                     "Sᴇᴀʀᴄʜ Oɴ Yᴀʜᴏᴏ",
-                    query="yahoo TeamUltroid",
+                    query="yahoo Danuma group",
                     same_peer=True,
                 ),
             ],
